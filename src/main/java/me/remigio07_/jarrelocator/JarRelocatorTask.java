@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.lucko.jarrelocator;
+package me.remigio07_.jarrelocator;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
@@ -161,8 +161,13 @@ final class JarRelocatorTask {
     }
 
     private void processClass(String name, InputStream entryIn) throws IOException {
-        ClassReader classReader = new ClassReader(entryIn);
-        ClassWriter classWriter = new ClassWriter(0);
+    	ClassReader classReader;
+    	
+    	try {
+    		classReader = new ClassReader(entryIn);
+    	} catch (IOException | IllegalArgumentException e) {
+    		return; // skip -> avoid loading unsupported classes
+    	} ClassWriter classWriter = new ClassWriter(0);
         RelocatingClassVisitor classVisitor = new RelocatingClassVisitor(classWriter, this.remapper, name);
 
         try {

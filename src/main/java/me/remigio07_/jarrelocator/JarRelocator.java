@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.lucko.jarrelocator;
+package me.remigio07_.jarrelocator;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
