@@ -52,7 +52,7 @@
  * <http://www.codehaus.org/>.
  */
 
-package me.remigio07_.jarrelocator;
+package me.remigio07.jarrelocator;
 
 import java.io.File;
 import java.util.ArrayList;

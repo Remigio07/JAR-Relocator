@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.remigio07_.jarrelocator;
+package me.remigio07.jarrelocator;
 
 import java.util.Collection;
 import java.util.Collections;

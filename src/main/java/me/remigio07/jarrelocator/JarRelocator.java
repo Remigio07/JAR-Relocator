@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.remigio07_.jarrelocator;
+package me.remigio07.jarrelocator;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
